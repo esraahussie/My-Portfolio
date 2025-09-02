@@ -75,4 +75,9 @@
 		$(this).blur();
 	});
 
+    <script>
+  const detailButtons = document.querySelectorAll('.project-link');
+</script>
+
+
 })(jQuery);

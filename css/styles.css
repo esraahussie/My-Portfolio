@@ -912,14 +912,12 @@ a:hover.back-to-top {
 	}
 	/* end of header */
 
-
 	/* Services */
 	.basic-2 .text-box {
 		padding-right: 2.125rem;
 		padding-left: 2.125rem;
 	}
 	/* end of services */
-
 
 	/* Extra Pages */
 	.ex-basic-1 .text-box {
@@ -947,7 +945,6 @@ a:hover.back-to-top {
 	}
 	/* end of general styles */
 
-
 	/* Navigation */
 	.navbar {
 		padding-top: 1.75rem;
@@ -957,7 +954,6 @@ a:hover.back-to-top {
 	}
 
 	.navbar.top-nav-collapse {
-		padding-top: 0.5rem;
 		padding-top: 0.5rem;
 		background-color: #24262a;
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
@@ -1010,7 +1006,6 @@ a:hover.back-to-top {
 	}
 	/* end of navigation */
 
-
 	/* Header */
 	.header {
 		padding-top: 15rem;
@@ -1018,7 +1013,6 @@ a:hover.back-to-top {
 		text-align: left;
 	}
 	/* end of header */
-
 
 	/* Details */
 	.split {
@@ -1036,6 +1030,7 @@ a:hover.back-to-top {
 		width: 50%;
 		display: inline-block;
 		vertical-align: top;
+		background-color: #fff;
 	}
 
 	.split .text-container {
@@ -1043,7 +1038,6 @@ a:hover.back-to-top {
 		margin-left: 3rem;
 	}
 	/* end of details */
-
 
 	/* Testimonials */
 	.cards-1 .card {
@@ -1075,7 +1069,6 @@ a:hover.back-to-top {
 	}
 	/* end of testimonials */
 
-
 	/* Accordion */
 	.accordion-1 .accordion {
 		width: 730px;
@@ -1084,7 +1077,6 @@ a:hover.back-to-top {
 	}
 	/* end of accordion */
 
-
 	/* Contact */
 	.form-1 form {
 		width: 790px;
@@ -1092,7 +1084,6 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 	/* end of contact */
-
 
 	/* Extra Pages */
 	.ex-cards-1 .card {
@@ -1120,13 +1111,11 @@ a:hover.back-to-top {
 	}
 	/* end of general styles */
 
-
 	/* Navigation */
 	.navbar .container {
 		max-width: 1330px;
 	}
 	/* end of navigation */
-
 
 	/* Header */
 	.header {
@@ -1134,7 +1123,6 @@ a:hover.back-to-top {
 		padding-bottom: 17.25rem;
 	}
 	/* end of header */
-
 
 	/* About */
 	.basic-1 .text-container.first {
@@ -1151,7 +1139,6 @@ a:hover.back-to-top {
 	}
 	/* end of about */
 
-
 	/* Details */
 	.split {
 		height: 700px;
@@ -1162,7 +1149,6 @@ a:hover.back-to-top {
 		margin-left: 5rem;
 	}
 	/* end of details */
-
 
 	/* Testimonials */
 	.cards-1 .card {
@@ -1175,7 +1161,6 @@ a:hover.back-to-top {
 	}
 	/* end of testimonials */
 	
-
 	/* Extra Pages */
 	.ex-cards-1 .card {
 		width: 336px;
@@ -1188,6 +1173,7 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
 
 /***************************/
 /*  Mobile Fixes (max 768) */
@@ -1272,7 +1258,23 @@ a:hover.back-to-top {
     padding-top: 3rem;
     padding-bottom: 1.5rem;
   }
+
+  /* ✅ Fix Split Section */
+  .split {
+    display: flex;
+    flex-direction: row; /* خليهم جنب بعض مش فوق وتحت */
+  }
+
+  .split .area-1,
+  .split .area-2 {
+    width: 50%;
+  }
+
+  .split .area-2 {
+    background-color: #fff !important;
+  }
 }
+
 
 /***************************/
 /*  Small Phones (max 480) */
@@ -1306,5 +1308,19 @@ a:hover.back-to-top {
   .card-box {
     width: 100%;
     padding: 20px;
+  }
+
+  /* ✅ Split على الشاشات الصغيرة جدًا */
+  .split {
+    flex-direction: row;
+  }
+
+  .split .area-1,
+  .split .area-2 {
+    width: 50%;
+  }
+
+  .split .area-2 {
+    background-color: #fff !important;
   }
 }

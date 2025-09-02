@@ -1188,3 +1188,123 @@ a:hover.back-to-top {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+
+/***************************/
+/*  Mobile Fixes (max 768) */
+/***************************/
+@media (max-width: 768px) {
+
+  /* Header */
+  .header {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+
+  .header .h1-large {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  .text-container {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-container .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 15px;
+  }
+
+  .header .btn-solid-lg,
+  .header .btn-outline-lg {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* About & Experience */
+  .about-exp-section {
+    padding: 60px 15px;
+    margin: 40px 0;
+  }
+
+  .card-box {
+    margin: 15px auto;
+    width: 90%;
+  }
+
+  /* Projects */
+  .project-card,
+  .project-card.reverse {
+    flex-direction: column;
+  }
+
+  .project-image {
+    flex: 0 0 100%;
+  }
+
+  .project-image img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .project-details {
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .project-name {
+    font-size: 1.3rem;
+  }
+
+  /* Contact */
+  .form-1 {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/***************************/
+/*  Small Phones (max 480) */
+/***************************/
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .navbar .logo-text {
+    font-size: 1.4rem;
+  }
+
+  .navbar .nav-item .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .card-box {
+    width: 100%;
+    padding: 20px;
+  }
+}
